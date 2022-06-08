@@ -8,7 +8,6 @@ export const reducer = (state, action) => {
       );
 
       if (!found) {
-        console.log(found);
         const product = state.products.find(
           (product) => product.id === action.payload.id
         );

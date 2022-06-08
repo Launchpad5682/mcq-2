@@ -7,7 +7,6 @@ export function ProductListing() {
   const { products, dispatch } = useDataProvider();
 
   const addToCart = (id) => {
-    console.log(id);
     dispatch({ type: "ADD_TO_CART", payload: { id } });
   };
 
